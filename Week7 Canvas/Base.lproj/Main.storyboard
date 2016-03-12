@@ -14,35 +14,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="2Hl-qi-Lbh">
-                                <rect key="frame" x="0.0" y="308" width="320" height="260"/>
+                                <rect key="frame" x="0.0" y="353" width="320" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dead" id="akj-S0-h99">
-                                        <rect key="frame" x="23" y="19" width="92" height="81"/>
+                                        <rect key="frame" x="23" y="34" width="92" height="81"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="excited" id="sme-3p-AgQ">
-                                        <rect key="frame" x="114" y="19" width="92" height="81"/>
+                                        <rect key="frame" x="114" y="34" width="92" height="81"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy" id="6Uj-D5-teh">
-                                        <rect key="frame" x="206" y="19" width="92" height="81"/>
+                                        <rect key="frame" x="206" y="34" width="92" height="81"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tongue" id="3aS-xO-NlH">
-                                        <rect key="frame" x="206" y="99" width="92" height="81"/>
+                                        <rect key="frame" x="206" y="114" width="92" height="81"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wink" id="2t9-eq-CdE">
-                                        <rect key="frame" x="114" y="99" width="92" height="81"/>
+                                        <rect key="frame" x="114" y="114" width="92" height="81"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad" id="lpd-Fp-Jc1">
-                                        <rect key="frame" x="23" y="99" width="92" height="81"/>
+                                        <rect key="frame" x="23" y="114" width="92" height="81"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_arrow" id="Aop-3v-5hp">
-                                        <rect key="frame" x="114" y="179" width="92" height="81"/>
+                                        <rect key="frame" x="143" y="0.0" width="34" height="26"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>

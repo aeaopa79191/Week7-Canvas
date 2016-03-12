@@ -13,11 +13,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var trayView: UIView!
     @IBOutlet var panGestureRecognizer: UIPanGestureRecognizer!
     var trayOriginalCenter: CGPoint!
+    var trayCenterWhenOpen: CGFloat = 0.0
+    var trayCenterWhenClosed: CGFloat = 0.0
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        
     }
     @IBAction func onTrayPanGesture(sender: UIPanGestureRecognizer) {
         
@@ -30,17 +34,29 @@ class ViewController: UIViewController {
         if panGestureRecognizer.state == UIGestureRecognizerState.Began {
             print("Gesture began at: \(point)")
             trayOriginalCenter = trayView.center
-        } else if panGestureRecognizer.state == UIGestureRecognizerState.Changed {
-            print("Gesture changed at: \(point)")
+            trayCenterWhenOpen = 460.5
+            trayCenterWhenClosed = 640
             
+        } else if panGestureRecognizer.state == UIGestureRecognizerState.Changed {
+            let velocity = sender.velocityInView(trayView)
+            
+            print("Gesture changed at: \(point)")
             trayView.center = CGPoint(x: trayOriginalCenter.x, y: trayOriginalCenter.y + translation.y)
+            
+            if velocity.y < 0 {
+                trayView.center = CGPoint(x: trayOriginalCenter.x, y: trayCenterWhenOpen)
+            }
+             else  {
+                trayView.center = CGPoint(x: trayOriginalCenter.x, y: trayCenterWhenClosed)
+            }
+            
             
         } else if panGestureRecognizer.state == UIGestureRecognizerState.Ended {
             print("Gesture ended at: \(point)")
         }
     }
     
-
+    
     
     
     override func didReceiveMemoryWarning() {
